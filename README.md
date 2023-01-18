@@ -1,13 +1,28 @@
-# Sample Hardhat Project
+# EVM Faucet
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+A non production ready smart contract which behave as a faucet for any EVM compatible platform.
 
-Try running some of the following tasks:
+
+## Compile
+To compile the project execute:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
+npx hardhat compile
+```
+
+## Deploy
+To deploy the project execute:
+```shell
 npx hardhat run scripts/deploy.js
+```
+
+Or pass the network if you want to deploy in a specific network provider:
+```shell
+npx hardhat run scripts/deploy.js --network <NETWORK_DEFINED_IN_HARDHATCONFIG>
+```
+
+## Run Tests
+To run the tests execute:
+```shell
+npx hardhat test
 ```
