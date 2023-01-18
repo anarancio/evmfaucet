@@ -7,12 +7,12 @@
 const hre = require("hardhat");
 
 async function main() {
- const GoerliFaucet = await hre.ethers.getContractFactory("GoerliFaucet");
- const goerliFaucet = await GoerliFaucet.deploy();
- await goerliFaucet.deployed();
+ const EvmFaucet = await hre.ethers.getContractFactory("EvmFaucet");
+ const evmFaucet = await EvmFaucet.deploy();
+ await evmFaucet.deployed();
 
   console.log(
-    "GoerliFaucet contract deployed"
+    "EvmFaucet contract deployed"
   );
 }
 

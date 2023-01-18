@@ -3,13 +3,13 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
- * @title GoerliFaucet
+ * @title EvmFaucet
  * @dev A faucet contract that allows users to request a small amount of ETH
  * @dev Users can request ETH once every 24 hours
  * @dev The contract has a balance that can be funded by the owner
  * @dev The owner can also change the amount of ETH given on each request
  */
-contract GoerliFaucet is Ownable {
+contract EvmFaucet is Ownable {
     mapping(address => uint256) public requests;
     uint256 public transferEthAmount;
 
